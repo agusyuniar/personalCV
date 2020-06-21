@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import * as emailjs from 'emailjs-com'
 
+
 class Contact extends Component {
     state = {
         name: '',
@@ -49,7 +50,7 @@ class Contact extends Component {
                 <div className='row'>
                     <div className='col'>
                         <div className='right-content' style={{ backgroundImage: "linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%)" }}>
-                            <h2 className="text-left ">Hubungi Saya ?</h2>
+                            <h2 className="text-left blacked">Hubungi Saya ?</h2>
                             <div class="container contact-form rowborder">
 
                                 <form onSubmit={this.handleSubmit.bind(this)}>
@@ -73,6 +74,7 @@ class Contact extends Component {
                                             <div class="form-group">
                                                 <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style={{ width: "100%", height: "200px" }} value={this.state.message} onChange={(val)=>this.setState({message:val.target.value})}></textarea>
                                             </div>
+
                                         </div>
                                     </div>
                                 </form>

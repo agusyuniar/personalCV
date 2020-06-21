@@ -117,18 +117,18 @@ class Portfolio extends Component {
                 <div className='row'>
                     <div className='col'>
                         <div className='right-content'>
-                            <h2 className="text-right">Lain - lain</h2>
+                            <h2 className="text-right blacked">Lain - lain</h2>
 
                             <MDBContainer>
                                 {/* <div className="mdb-lightbox no-margin" style={{ cursor: "zoom-in" }}> */}
-                                <div className="h4 text-center border-bottom pb-1 mb-4 ">
+                                <div className="h4 text-center border-bottom pb-1 mb-4 blacked">
                                     Sertifikat
                                 </div>
                                 <MDBRow className=" pt-3 mb-3">
                                     {this.renderImgList()}
                                 </MDBRow>
                                 <div className=" rowborder" />
-                                <div className="h4 text-center  pb-1 mb-4 ">
+                                <div className="h4 text-center  pb-1 mb-4 blacked">
                                     Hobby & Interest
                                 </div>
                                 <MDBRow className=" pt-3 mb-3">

@@ -5,6 +5,7 @@ import Portfolio from "./portfolio";
 import Expr from "./experience";
 import Misc from "./miscelanious";
 import Contact from "./contact"
+import "../component/responsive.css"
 
 class Home extends Component {
     state = {}

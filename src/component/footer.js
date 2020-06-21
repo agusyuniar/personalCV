@@ -1,46 +1,33 @@
 import React, { Component } from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { MDBIcon } from "mdbreact";
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 class Footer extends Component {
     state = {}
     render() {
         return (
-            <MDBFooter color="blue" className="font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
-          <MDBCol md="6">
-            <h5 className="title">Footer Content</h5>
-            <p>
-              Here you can use rows and columns here to organize your footer
-              content.
-            </p>
-          </MDBCol>
-          <MDBCol md="6">
-            <h5 className="title">Links</h5>
-            <ul>
-              <li className="list-unstyled">
-                <a href="#!">Link 1</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 2</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 3</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 4</a>
-              </li>
-            </ul>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-      <div className="footer-copyright text-center py-3">
-        <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="#"> yuniar<strong>agus</strong>.com </a>
-        </MDBContainer>
-      </div>
-    </MDBFooter>
+            <div style={{backgroundImage: "linear-gradient(to top, #09203f 0%, #537895 100%)"}}>
+                <div className="row m-auto" style={{padding:"10px 0", width:"20%"}}>
+                    <a className="col" href="https://www.linkedin.com/in/yuniar-agus-b2a271b9/">
+                        <LinkedInIcon/>
+                    </a>
+                    <a className="col" href="https://www.instagram.com/uu_niar/">
+                        <InstagramIcon />
+                    </a>
+                    <a className="col" href="https://github.com/agusyuniar">
+                        <GitHubIcon />
+                    </a>
+                </div>
+                <div className="text-center py-2" style={{backgroundColor: "#09203f", color:"#fff"}}>
+                    <div>
+                        &copy; {new Date().getFullYear()} Copyright <a style={{color:"#fff",textDecoration:"none"}} href="#"> yuniar<strong>agus</strong>.com </a>
+                    </div>
+                </div>
+            </div>
         );
     }
 }

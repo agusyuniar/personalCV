@@ -11,7 +11,7 @@ class Portfolio extends Component {
                 <div className='row'>
                     <div className='col'>
                         <div className='right-content'>
-                            <h2 className="text-right">Portofolio</h2>
+                            <h2 className="text-right blacked">Portofolio</h2>
                             <div className="row">
                                 <div className="col">
                                     <PortCard />

@@ -38,7 +38,7 @@ class Sidenavigate extends Component {
                 </Tooltip>
                 </a>
                 <a href="#sec-5">
-                <Tooltip arrow title="Miscellanious" placement="right" >
+                <Tooltip arrow title="Mail Me" placement="right" >
                     <ContactPhoneIcon className="nav-icon" color="action"/>
                 </Tooltip>
                 </a>

@@ -1,8 +1,16 @@
 body{
     color: rgb(209, 209, 209);
 }
+/* .h1, .h2, .h3, h4, .h5, .h6, p, h2 p, col{
+    color: black !important;
+} */
+
+
 html {
     scroll-behavior: smooth;
+  }
+  .blacked {
+      color: rgb(68, 68, 68);
   }
 .navlogo {
     background-image: url('../img/yar-logo.png') ;
@@ -19,6 +27,7 @@ html {
 .motto{
     text-shadow: 3px 3px 5px black;
     margin:25% 0;
+    color: white;
     /* margin-bottom: 200px; */
 }
 .btn-start{
@@ -44,9 +53,9 @@ html {
     box-shadow: none;
 }
 .bg{
-    background-image: url('../img/bg.png');
-    background-size: 100vw;
-    /* background-repeat: repeat-y; */
+    background-image: url('../img/bg.jpg');
+    /* background-size: 100vw; */
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: unset;
     background-color: whitesmoke;
@@ -56,6 +65,10 @@ html {
     font-size: 14pt;
     font-family: 'Josefin Slab', serif;
 }
+.section-title{
+    color: rgb(0, 0, 0);
+}
+
 .nav-content{
     margin: 30px auto 5px auto;
 
@@ -104,11 +117,12 @@ html {
     padding-top: 15px;
     font-variant-caps: petite-caps  ;
     font-weight: 700;
+    color: rgb(0, 31, 50);
 }
 
 .right-content{
     text-align: left;
-    margin: 30px auto 0 auto;
+    margin: 30px  auto;
     padding: 50px 30px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -117,11 +131,17 @@ html {
 .right-content p{
     margin-bottom: 30px;
     text-justify: distribute-all-lines;
+    color: rgb(45, 45, 45);
 }
 .right-content h4{
     margin-top: 20px;
+    color: black;
 }
 .rowborder{
     padding:20px 0;
     border-top: 1px solid silver;
+}
+
+.exp{
+    background-image: linear-gradient(to bottom, #dfe9f3 0%, white 100%)
 }

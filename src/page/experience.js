@@ -50,25 +50,25 @@ class Portfolio extends Component {
     renderJob=()=>{
         return this.state.exp.map((item,id)=>{
             return (
-                <TimelineItem>
+                <TimelineItem >
                     <TimelineOppositeContent>
-                        <Typography variant="body1" color="textSecondary" className="border-top rounded p-1 mt-2">
+                        <Typography variant="body1" color="textSecondary" className="exp-period border-top rounded p-1 mt-2">
                             {item.periode}
                         </Typography>
                     </TimelineOppositeContent>
-                    <TimelineSeparator>
-                        <img src={require(`../img/${item.logo}`)} height="40" alt={item.company} style={{maxWidth:"150px"}} />
+                    <TimelineSeparator >
+                        <img src={require(`../img/${item.logo}`)} height="40" alt={item.company} style={{maxWidth:"150px"}} className="exp-logo"/>
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent className="mb-5">
-                        <Paper elevation={8} className="p-3"  style={{backgroundImage: "linear-gradient(to bottom, #dfe9f3 0%, white 100%)"}}>
-                            <Typography variant="p" component="h3" className="border-bottom mb-2 pb-1">
+                    <TimelineContent className="mb-5 ">
+                        <Paper elevation={8} className="p-3 exp">
+                            <Typography variant="p" component="h3" className="exp-title border-bottom mb-2 pb-1">
                                 {item.posisi}
                             </Typography>
                             <Typography variant="p" component="h5" color="primary">
                                 {item.company}
                             </Typography>
-                            <Typography variant="body1" component="h6" className="pt-2">{item.jobdesk}</Typography>
+                            <Typography variant="body1" component="h6" className="exp-desk pt-2">{item.jobdesk}</Typography>
                         </Paper>
                     </TimelineContent>
                 </TimelineItem>
@@ -83,8 +83,8 @@ class Portfolio extends Component {
                 <div className='row'>
                     <div className='col'>
                         <div className='right-content'>
-                        <h2 className="text-left">Pengalaman</h2>
-                            <Timeline align="alternate" className="container p-5">
+                        <h2 className="text-left blacked">Pengalaman</h2>
+                            <Timeline align="alternate" className="exp-section">
                                 {this.renderJob()}
                             </Timeline>
                         </div>
