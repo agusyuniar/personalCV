@@ -137,6 +137,9 @@ html {
     margin-top: 20px;
     color: black;
 }
+.informal-logo{
+    height: 30px !important;
+}
 .rowborder{
     padding:20px 0;
     border-top: 1px solid silver;

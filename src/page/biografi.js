@@ -87,7 +87,7 @@ class Biografi extends Component {
                                                 <FontAwesomeIcon icon={faGraduationCap} />
                                             </td>
                                             <td>
-                                                <div className="col h6">2008 <CodeIcon fontSize="small" /> 2012 </div>
+                                                <div className="col h6">2005 <CodeIcon fontSize="small" /> 2008 </div>
                                             </td>
                                             <td>
                                                 <div className="col">
@@ -106,7 +106,7 @@ class Biografi extends Component {
                                                 <FontAwesomeIcon icon={faGraduationCap} />
                                             </td>
                                             <td>
-                                                <div className="col h6">2008 <CodeIcon fontSize="small" /> 2012 </div>
+                                                <div className="col h6">2002 <CodeIcon fontSize="small" /> 2005 </div>
                                             </td>
                                             <td>
                                                 <div className="col ">
