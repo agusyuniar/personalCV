@@ -1,50 +1,13 @@
 import React, { Component } from 'react';
-import ToggleOnOutlinedIcon from '@material-ui/icons/ToggleOnOutlined';
-import PortCard from "../component/portfolioCard";
-import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, TimelineOppositeContent } from "@material-ui/lab";
-import { MDBContainer, MDBRow, MDBCol, MDBView, MDBMask, MDBNav, MDBNavItem, MDBNavLink, MDBIcon } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBView, MDBMask} from "mdbreact";
 import Lightbox from "react-image-lightbox";
-
-import Avatar from '@material-ui/core/Avatar';
-import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import HotelIcon from '@material-ui/icons/Hotel';
-import RepeatIcon from '@material-ui/icons/Repeat';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
+import SertifCard from "../component/sertifCard";
 
 
 
-class Portfolio extends Component {
+class Misc extends Component {
     state = {
         isOpen: false,
-        photoIndex: 0,
-        sertifikat: [
-            {
-                judul: "Digitalent Kominfo",
-                ket: "Digitalent Kominfo : Programming HTML, CSS, Javascript",
-                img: "digitalent.jpg",
-            },
-            {
-                judul: "Purwadhika Startup & Coding School",
-                ket: "Purwadhika Startup & Coding School : Web and Mobile Development",
-                img: "coming.jpg",
-            },
-            {
-                judul: "Progate",
-                ket: "Progate : Web Development Path (Node.js)",
-                img: "progate.jpg",
-            },
-            {
-                judul: "Inspigo",
-                ket: "Inspigo : Hi, Tech Seminar",
-                img: "hitech.jpg",
-            },
-            {
-                judul: "TOEFL",
-                ket: "Bina Nusantara English Proficiency Test",
-                img: "toefl.jpg",
-            },
-        ],
         hobby: [
             {
                 name : "Badminton",
@@ -71,6 +34,7 @@ class Portfolio extends Component {
                 <MDBCol md="6" className="zoomfx">
                     <figure >
                         <div className="mdb-lightbox no-margin ">
+                            
                             <MDBView hover zoom>
                                 <img
                                     src={require(`../img/sertif/${item.img}`)}
@@ -99,7 +63,7 @@ class Portfolio extends Component {
             return (
                     <div className="col-6 text-center" style={{padding:"3% 5%"}}>
                         <img src={require(`../img/interest/${item.img}`)} alt={item.name} height="60" className="mb-3"/>
-                        <div className="h5">
+                        <div className="h5" style={{color:"black"}}>
                             {item.name}
                         </div>
                     </div>
@@ -124,9 +88,14 @@ class Portfolio extends Component {
                                 <div className="h4 text-center border-bottom pb-1 mb-4 blacked">
                                     Sertifikat
                                 </div>
-                                <MDBRow className=" pt-3 mb-3">
+{/* ------------------------------- */}
+
+<SertifCard/>
+{/* ------------------------------- */}
+                                {/* <MDBRow className=" pt-3 mb-3">
                                     {this.renderImgList()}
-                                </MDBRow>
+                                </MDBRow> */}
+                                
                                 <div className=" rowborder" />
                                 <div className="h4 text-center  pb-1 mb-4 blacked">
                                     Hobby & Interest
@@ -169,4 +138,4 @@ class Portfolio extends Component {
     }
 }
 
-export default Portfolio;
+export default Misc;

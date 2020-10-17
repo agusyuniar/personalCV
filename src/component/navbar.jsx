@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink} from 'mdbreact';
 // import { BrowserRouter as Router } from 'react-router-dom';
-import './gaya.css'
+import './gaya.scss'
 import Jumbo from "./jumbotron";
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
@@ -30,8 +30,8 @@ class FullPageIntroWithFixedTransparentNavbar extends React.Component {
 
   render() {
     return (
-      <div>
-            <MDBNavbar color="elegant-color" fixed="top" dark expand="md" scrolling transparent>
+      <div >
+            <MDBNavbar color="elegant-color" fixed="top" dark expand="md" scrolling style={{background: "linear-gradient(to left, #525252, #3d72b4)"}}>
             <div className='container'>
 
               <MDBNavbarBrand href="/" className='navlogo'>

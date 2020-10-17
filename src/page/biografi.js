@@ -3,9 +3,16 @@ import ToggleOnOutlinedIcon from '@material-ui/icons/ToggleOnOutlined';
 import CodeIcon from '@material-ui/icons/Code';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap, faPuzzlePiece, faCertificate } from '@fortawesome/free-solid-svg-icons'
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+
+import { HorizontalBar } from 'react-chartjs-2';
 
 class Biografi extends Component {
-    state = {  }
+    state = {
+        colorBar: {background: "linear-gradient(225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%)"}
+    }
     render() { 
         return (
             <div className='section pt-5' id="sec-1">
@@ -13,9 +20,17 @@ class Biografi extends Component {
                 <div className='row'>
                     <div className='col-3 pr-1 col-left'>
                         <div className='left-content' >
-                            <img src={require('../img/PP.png')} width='150' alt="profile-pict"/>
+                            <img src={require('../img/PP.jpg')} width='180' alt="profile-pict" />
                             <h3>Yuniar Agus</h3>
+                            <h6>
+                                <i className="pink-text"><InstagramIcon/></i>
+                                <i className="blue-text"><LinkedInIcon/></i>
+                                <i className="grey-text"><GitHubIcon/></i>
+                            </h6>
                         </div>
+                            <a className="btn-custom">
+                                Download CV
+                            </a>
                     </div>
                     <div className='col col-right'>
                         <div className='right-content'>
@@ -48,15 +63,33 @@ class Biografi extends Component {
                                             <td>+62 857 1035 2936</td>
                                         </tr>
                                     </div>
+                                
                                     <div className="col-5">
-                                        <h4>Bahasa</h4>
+                                    
+                                        <h4>Skill</h4>
                                         <div className="mt-2"><b>Indonesia</b></div>
-                                        <div class="mb-4 progress">
-                                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style={{ width: "90%" }} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="mb-2 progress">
+                                            <div class="progress-bar progress-bar-striped " role="progressbar" style={{ width: "90%", background: this.state.colorBar.background}} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                         <div><b>Inggris</b></div>
-                                        <div class="mb-4 progress">
-                                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style={{ width: "60%" }} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="mb-2 progress">
+                                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style={{ width: "60%", background: this.state.colorBar.background}} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div><b>Photoshop</b></div>
+                                        <div class="mb-2 progress">
+                                            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style={{ width: "75%", background:this.state.colorBar.background}} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div><b>Ms. Office</b></div>
+                                        <div class="mb-2 progress">
+                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style={{ width: "80%", background:this.state.colorBar.background}} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div><b>Html CSS</b></div>
+                                        <div class="mb-2 progress">
+                                            <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style={{ width: "65%", background:this.state.colorBar.background}} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div><b>React</b></div>
+                                        <div class="mb-2 progress">
+                                            <div class="progress-bar progress-bar-striped bg-warning11+" role="progressbar" style={{ width: "75%", background:this.state.colorBar.background}} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                 </div>

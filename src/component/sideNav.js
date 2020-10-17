@@ -43,8 +43,8 @@ class Sidenavigate extends Component {
                 </Tooltip>
                 </a>
                 <a href="#" className="">
-                <Tooltip arrow title="scroll to top" placement="right" style={{backgroundColor: '#f5f5f9',color: 'rgba(0, 0, 0, 1)'}}>
-                    <KeyboardArrowUpIcon className="nav-icon mt-5" />
+                <Tooltip arrow title="scroll to top" placement="right" >
+                    <KeyboardArrowUpIcon className="nav-icon" />
                 </Tooltip>
                 </a>
 

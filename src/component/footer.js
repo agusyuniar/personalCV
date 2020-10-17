@@ -10,7 +10,7 @@ class Footer extends Component {
     state = {}
     render() {
         return (
-            <div style={{backgroundImage: "linear-gradient(to top, #09203f 0%, #537895 100%)"}}>
+            <div className="py-5" style={{backgroundImage: "linear-gradient(to bottom, #8e9eab, #eef2f3)"}}>
                 <div className="row m-auto" style={{padding:"10px 0", width:"20%"}}>
                     <a className="col" href="https://www.linkedin.com/in/yuniar-agus-b2a271b9/">
                         <LinkedInIcon/>
@@ -22,9 +22,9 @@ class Footer extends Component {
                         <GitHubIcon />
                     </a>
                 </div>
-                <div className="text-center py-2" style={{backgroundColor: "#09203f", color:"#fff"}}>
+                <div className="text-center py-2" >
                     <div>
-                        &copy; {new Date().getFullYear()} Copyright <a style={{color:"#fff",textDecoration:"none"}} href="#"> yuniar<strong>agus</strong>.com </a>
+                        &copy; {new Date().getFullYear()} Copyright <a style={{color:"#000",textDecoration:"none"}} href="#"> yuniar<strong>agus</strong>.com </a>
                     </div>
                 </div>
             </div>
