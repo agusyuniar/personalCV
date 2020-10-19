@@ -46,7 +46,7 @@ class Contact extends Component {
         console.log(this.state);
         
         return (
-            <div className='section pt-5 mb-5' id="sec-5">
+            <div className='section pt-5 mb-5 last-sect' id="sec-5">
                 <div className='row'>
                     <div className='col'>
                         <div className='right-content' style={{ backgroundImage: "linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%)" }}>

@@ -1,5 +1,11 @@
 /* Tab */
 @media all and (max-width: 1000px) {
+    .navlogo{
+        height: 30px;
+        background-size: 30px;
+        padding: 1px !important;
+        width: 210px;
+    }
     .motto{
         text-shadow: 3px 3px 5px black;
         font-size: 18pt;
@@ -37,9 +43,32 @@
     .informal-logo{
         height: 20px !important;
     }
+    .nav-content{
+        margin: 30px auto;
+        padding: auto;
+        width: 200%;
+    }
+    .btn-custom{
+        padding: 5px 15px;
+        margin: 50px 10px !important;
+        font-size: 10pt;
+    }
+    .footer-icon{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .last-sect{
+        padding-bottom: 50px !important;
+    }
 }
 /* Smartphone */
 @media all and (max-width: 768px) {
+    .navlogo{
+        height: 30px;
+        background-size: 30px;
+        padding: 1px !important;
+        width: 210px;
+    }
     .informal-logo{
         height: 15px !important;
     }
@@ -71,18 +100,27 @@
         /* background-color: rgba(255, 255, 255, 0.8);
         box-shadow: 2px 5px 8px rgb(117, 117, 117); */
         float: left;
+        margin: auto;
     }
     .left-content h3{
         font-size: 10pt;
     }
     .left-content img{
+        padding-top: 10px;
         width: 80px;
+    }
+    .left-content h6{
+        visibility: hidden;
+    }
+    .btn-custom{
+        visibility: hidden;
     }
     .right-content{
         margin: 30px 0 -60px 0;
         padding: 30px 10px;
     }
     .nav-content{
+        visibility: hidden;
         padding: -10px !important;
         /* visibility: hidden !important; */
         padding: 0;

@@ -12,19 +12,19 @@ class Footer extends Component {
         return (
             <div className="py-5" style={{backgroundImage: "linear-gradient(to bottom, #8e9eab, #eef2f3)"}}>
                 <div className="row m-auto" style={{padding:"10px 0", width:"20%"}}>
-                    <a className="col" href="https://www.linkedin.com/in/yuniar-agus-b2a271b9/">
+                    <a className="col footer-icon" href="https://www.linkedin.com/in/yuniar-agus-b2a271b9/">
                         <LinkedInIcon/>
                     </a>
-                    <a className="col" href="https://www.instagram.com/uu_niar/">
+                    <a className="col footer-icon" href="https://www.instagram.com/uu_niar/">
                         <InstagramIcon />
                     </a>
-                    <a className="col" href="https://github.com/agusyuniar">
+                    <a className="col footer-icon" href="https://github.com/agusyuniar">
                         <GitHubIcon />
                     </a>
                 </div>
                 <div className="text-center py-2" >
                     <div>
-                        &copy; {new Date().getFullYear()} Copyright <a style={{color:"#000",textDecoration:"none"}} href="#"> yuniar<strong>agus</strong>.com </a>
+                        &copy; {new Date().getFullYear()} Copyright <a style={{color:"#3c3b3f",textDecoration:"none"}} href="#"> yuniar<strong>agus</strong>.com </a>
                     </div>
                 </div>
             </div>
